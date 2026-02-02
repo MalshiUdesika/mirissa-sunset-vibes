@@ -47,43 +47,105 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        // Custom Brand Colors
+        ocean: {
+          deep: "hsl(var(--ocean-deep))",
+          mid: "hsl(var(--ocean-mid))",
         },
+        sunset: {
+          orange: "hsl(var(--sunset-orange))",
+          gold: "hsl(var(--sunset-gold))",
+        },
+        sand: {
+          light: "hsl(var(--sand-light))",
+          warm: "hsl(var(--sand-warm))",
+        },
+        emerald: "hsl(var(--emerald))",
+        coral: "hsl(var(--coral))",
+      },
+      fontFamily: {
+        display: ["Playfair Display", "serif"],
+        body: ["Inter", "sans-serif"],
+      },
+      fontSize: {
+        "hero-xl": ["5rem", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
+        "hero-lg": ["4rem", { lineHeight: "1.1", letterSpacing: "-0.02em" }],
+        "hero-md": ["3rem", { lineHeight: "1.2", letterSpacing: "-0.01em" }],
+        "section": ["2.5rem", { lineHeight: "1.2" }],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+        "4xl": "2rem",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        elevated: "var(--shadow-elevated)",
+        glow: "var(--shadow-glow)",
+        "glass": "0 8px 32px rgba(0, 0, 0, 0.1)",
+        "glass-lg": "0 16px 48px rgba(0, 0, 0, 0.15)",
+      },
+      backdropBlur: {
+        glass: "20px",
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "scale-in": {
+          "0%": { opacity: "0", transform: "scale(0.95)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        "wave-slow": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { boxShadow: "0 0 20px hsl(16 100% 60% / 0.4)" },
+          "50%": { boxShadow: "0 0 40px hsl(16 100% 60% / 0.6)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in-up": "fade-in-up 0.6s ease-out forwards",
+        "fade-in": "fade-in 0.4s ease-out forwards",
+        "scale-in": "scale-in 0.3s ease-out forwards",
+        "slide-in-right": "slide-in-right 0.5s ease-out forwards",
+        "float": "float 6s ease-in-out infinite",
+        "float-delayed": "float 6s ease-in-out infinite 2s",
+        "wave-slow": "wave-slow 20s linear infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "hero-gradient": "linear-gradient(180deg, transparent 0%, hsl(var(--ocean-deep) / 0.7) 100%)",
+        "sunset-gradient": "linear-gradient(135deg, hsl(var(--sunset-orange)), hsl(var(--sunset-gold)))",
+        "ocean-gradient": "linear-gradient(180deg, hsl(var(--ocean-deep)), hsl(var(--ocean-mid)))",
       },
     },
   },
