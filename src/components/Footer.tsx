@@ -34,7 +34,7 @@ const Footer = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <img src={logo} alt="Meridian Escapes" className="h-12 w-auto" />
-                <span className="font-display text-2xl text-sand-light">Meridian Escapes</span>
+                <span className="font-display text-xl text-sand-light leading-tight">Meridian<br />Escapes</span>
               </div>
               <p className="text-sand-light/60 mb-6 max-w-sm">
                 Mirissa's premier beachfront destination where ocean views meet culinary excellence. 
