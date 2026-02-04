@@ -41,8 +41,8 @@ const Navbar = ({ onBookingClick }: NavbarProps) => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <img src={logo} alt="Meridian Escapes" className="h-10 md:h-12 w-auto" />
-            <span className="font-display text-xl md:text-2xl text-sand-light">
-              Meridian Escapes
+            <span className="font-display text-lg md:text-xl text-sand-light leading-tight">
+              Meridian<br />Escapes
             </span>
           </a>
 
