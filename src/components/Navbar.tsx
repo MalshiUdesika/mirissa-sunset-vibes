@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 interface NavbarProps {
   onBookingClick: () => void;
@@ -38,12 +39,10 @@ const Navbar = ({ onBookingClick }: NavbarProps) => {
       >
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <span className="font-display text-2xl md:text-3xl text-sand-light">
-              Taboo
-            </span>
-            <span className="text-sunset-orange font-display text-lg md:text-xl">
-              Lounge
+          <a href="#" className="flex items-center gap-3">
+            <img src={logo} alt="Meridian Escapes" className="h-10 md:h-12 w-auto" />
+            <span className="font-display text-xl md:text-2xl text-sand-light">
+              Meridian Escapes
             </span>
           </a>
 
