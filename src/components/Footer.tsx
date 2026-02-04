@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Instagram, Facebook, MapPin, Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -31,9 +32,9 @@ const Footer = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center gap-2 mb-4">
-                <span className="font-display text-3xl text-sand-light">Taboo</span>
-                <span className="text-sunset-orange font-display text-2xl">Lounge</span>
+              <div className="flex items-center gap-3 mb-4">
+                <img src={logo} alt="Meridian Escapes" className="h-12 w-auto" />
+                <span className="font-display text-2xl text-sand-light">Meridian Escapes</span>
               </div>
               <p className="text-sand-light/60 mb-6 max-w-sm">
                 Mirissa's premier beachfront destination where ocean views meet culinary excellence. 
@@ -41,7 +42,7 @@ const Footer = () => {
               </p>
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com/tabooloungemirissa"
+                  href="https://instagram.com/meridianescapes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-sand-light hover:bg-sunset-orange hover:text-white transition-all"
@@ -49,7 +50,7 @@ const Footer = () => {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://facebook.com/tabooloungemirissa"
+                  href="https://facebook.com/meridianescapes"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-sand-light hover:bg-sunset-orange hover:text-white transition-all"
@@ -103,8 +104,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-sunset-orange flex-shrink-0" />
-                <a href="mailto:hello@taboolounge.lk" className="text-sand-light/60 hover:text-sunset-orange transition-colors">
-                  hello@taboolounge.lk
+                <a href="mailto:hello@meridianescapes.lk" className="text-sand-light/60 hover:text-sunset-orange transition-colors">
+                  hello@meridianescapes.lk
                 </a>
               </li>
             </ul>
@@ -114,7 +115,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sand-light/40 text-sm">
-            © {currentYear} Taboo Lounge Mirissa. All rights reserved.
+            © {currentYear} Meridian Escapes. All rights reserved.
           </p>
           <p className="text-sand-light/40 text-sm">
             Open Daily: 8:30 AM - 10:00 PM

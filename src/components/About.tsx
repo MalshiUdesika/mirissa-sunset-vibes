@@ -33,7 +33,7 @@ const About = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-elevated">
               <img
                 src={loungeImage}
-                alt="Taboo Lounge Atmosphere"
+                alt="Meridian Escapes Atmosphere"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/60 to-transparent" />
@@ -70,10 +70,10 @@ const About = () => {
               <span className="gradient-text-sunset">Beach Lounge</span>
             </h2>
             <p className="text-sand-light/80 text-lg mb-6 leading-relaxed">
-              Where the Indian Ocean meets epicurean excellence. Taboo Lounge is more than a restaurant—it's a sensory journey through Sri Lanka's finest flavors, served with your feet in the sand and the sunset painting the sky.
+              Where the Indian Ocean meets epicurean excellence. Meridian Escapes is more than a restaurant—it's a sensory journey through Sri Lanka's finest flavors, served with your feet in the sand and the sunset painting the sky.
             </p>
             <p className="text-sand-light/70 mb-10">
-              From traditional hoppers at sunrise to signature cocktails at golden hour, every moment at Taboo is crafted to be unforgettable. Our chefs blend centuries-old Lankan recipes with contemporary techniques, while our bartenders shake up tropical magic you won't find anywhere else.
+              From traditional hoppers at sunrise to signature cocktails at golden hour, every moment at Meridian Escapes is crafted to be unforgettable. Our chefs blend centuries-old Lankan recipes with contemporary techniques, while our bartenders shake up tropical magic you won't find anywhere else.
             </p>
 
             {/* Stats Grid */}
