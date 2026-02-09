@@ -75,5 +75,20 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function (d, t) {
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = "https://pub-35bde407772b4f40b7b780b65a144b75.r2.dev/widget-sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+          window.agentWidgetSDK.run({
+            token: "492e0250-f7c1-4073-b441-ba5d3a43014f"
+          });
+        };
+      })(document, "script");
+    </script>
   </body>
 </html>
